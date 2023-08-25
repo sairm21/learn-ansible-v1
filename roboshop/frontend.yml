@@ -1,0 +1,8 @@
+- name: Roboshop frontend playbook
+  hosts: all
+  taaks:
+
+  - name: Install the latest version of nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: latest
