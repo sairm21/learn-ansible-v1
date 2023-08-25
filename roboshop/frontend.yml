@@ -1,5 +1,6 @@
 - name: Roboshop frontend playbook
   hosts: all
+  become: yes
   tasks:
 
   - name: Install the latest version of nginx
