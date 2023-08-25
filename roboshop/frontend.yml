@@ -17,7 +17,7 @@
     ansible.builtin.file:
       path: /usr/share/nginx/html
       state: directory
-      mode: '0755'
+      mode: '0777'
 
   - name: download and extract the project files
     ansible.builtin.unarchive:
