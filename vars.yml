@@ -6,8 +6,8 @@
 
     - name: print URL variable
       ansible.builtin.debug:
-        msg: "{ { URL } }"
+        msg: "{{ URL }}"
 
     - name: print URL variable
       ansible.builtin.debug:
-        msg: URL is { { URL } }
+        msg: URL is {{ URL }}
