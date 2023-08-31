@@ -15,3 +15,16 @@
         - guava
         - kiwi
         - mango
+
+    - name: print loop items
+      ansible.builtin.debug:
+        msg: fruit name - {{ item.name }}, quantity - {{ item.quantity }}
+      loop:
+        - { name: apple, quantity: 100 }
+        - { name: bannana, quantity: 200 }
+        - { name: pine, quantity: 300 }
+        - { name: grape, quantity: 400 }
+        - { name: papaya, quantity: 500 }
+        - { name: guava, quantity: 600 }
+        - { name: kiwi, quantity: 700 }
+        - { name: mango, quantity: 800 }
