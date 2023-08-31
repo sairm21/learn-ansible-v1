@@ -1,0 +1,14 @@
+- name: demo on contions
+  hosts: localhost
+  connection: local
+  tasks:
+
+    - name: conditions one
+      ansible.builtin.debug:
+        msg: condition one
+      when: condition == "one"
+
+    - name: condition two
+      ansible.builtin.debug:
+        msg: condition two
+      when: condition == "two"
