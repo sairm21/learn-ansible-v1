@@ -1,0 +1,12 @@
+- name: demo on contions
+  hosts: localhost
+  connection: local
+  tasks:
+
+    - name: register variable
+      ansible.builtin.shell: uptime
+      register: output
+
+    - name: print registered value
+      ansible.builtin.debug:
+        msg: "{{ output }}"
