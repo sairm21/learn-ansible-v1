@@ -9,4 +9,4 @@
 
     - name: print registered value
       ansible.builtin.debug:
-        msg: "{{ output }}"
+        msg: "{{ output.stdout | split(' ') }}"
