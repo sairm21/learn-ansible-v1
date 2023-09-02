@@ -13,4 +13,4 @@
 
     - name: print registered value
       ansible.builtin.debug:
-        msg: "{{ output.stdout_lines | split(' ') }}"
+        msg: "{{ output.stdout_lines | join(' ') | split(' ') }}"
