@@ -10,3 +10,7 @@
     - name: print registered value
       ansible.builtin.debug:
         msg: "{{ output.stdout | split(' ') }}"
+
+    - name: print registered value
+      ansible.builtin.debug:
+        msg: "{{ output.stdout_lines | split(' ') }}"
