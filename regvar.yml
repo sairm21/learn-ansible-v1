@@ -11,6 +11,6 @@
       ansible.builtin.debug:
         msg: "{{ output.stdout | split(' ') }}"
 
-    - name: print registered value
+    - name: print registered value using join to convert list to single string
       ansible.builtin.debug:
         msg: "{{ output.stdout_lines | join(' ') | split(' ') }}"
