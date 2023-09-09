@@ -1,0 +1,8 @@
+- name: aws ssm demo
+  hosts: localhost
+  connection: local
+  tasks:
+
+    - name: print value of parameter feching from aws parameter store
+      ansible.builtin.debug:
+        msg: parameter - {{ lookup('amazon.aws.aws_ssm', 'sample_parameter', region='us-east-1') }}
