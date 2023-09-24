@@ -1,4 +1,4 @@
-{% for in courses %}
+{% for item in courses %}
 
 Course_name={{ item.name }}
 Time={{ item.time }}
