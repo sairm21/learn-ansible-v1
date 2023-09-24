@@ -1,0 +1,6 @@
+{% for in courses %}
+
+Course_name={{ item.name }}
+Time={{ item.time }}
+
+{% endfor %}

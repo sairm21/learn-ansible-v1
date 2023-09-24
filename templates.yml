@@ -1,0 +1,22 @@
+- name: Demo on templates
+  hosts: localhost
+  connection: local
+  vars:
+    courses:
+      - name: AWS
+        time: 7 AM
+
+      - name: Terraform
+        time: 8AM
+
+      - name: kubernetes
+        time: 9 AM
+
+      - name: DevOps
+        time: 8PM
+  tasks:
+
+    - name: copy file
+      ansible.builtin.template:
+        src: test.txt
+        dest: /tmp/test.txt
